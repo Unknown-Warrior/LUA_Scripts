@@ -93,8 +93,10 @@ if game == 1 then
 			gui.text(55, -115,trophydp[trophy2+1])			
 		end
 		
-		gui.text(10, -55, string.format("Steps left: "),"teal")
-		gui.text(85, -55, string.format("%d", 500-stepc))	 
+		if stepc ~= 0 then
+			gui.text(10, -55, string.format("Steps left: "),"teal")
+			gui.text(85, -55, string.format("%d", 500-stepc))
+		end
 
 		gui.text(75,-35, string.format(":Area 1 | Area 2:"),"yellow")	
 		gui.text(75,-25, string.format(":Area 3 | Area 4:"),"yellow")	
@@ -138,8 +140,10 @@ elseif game == 2 then
 			gui.text(55, -115,trophypt[trophy2+1])			
 		end
 		
-		gui.text(10, -55, string.format("Steps left: "),"teal")
-		gui.text(85, -55, string.format("%d", 500-stepc))	 
+		if stepc ~= 0 then
+			gui.text(10, -55, string.format("Steps left: "),"teal")
+			gui.text(85, -55, string.format("%d", 500-stepc))
+		end 
 
 		gui.text(75,-35, string.format(":Area 1 | Area 2:"),"yellow")	
 		gui.text(75,-25, string.format(":Area 3 | Area 4:"),"yellow")	
